@@ -57,6 +57,7 @@ switch to nightly and run with cranelift.
 
 ## List of vulnerabilities
 * [Insufficient Access Control](contracts/access/tests/access_control.rs) 
+* [Insufficient Token Address Validati](contracts/receive/tests/access_control.rs) 
 * TBA
 
 
@@ -65,4 +66,5 @@ switch to nightly and run with cranelift.
 * [Comparison with Solidity Contracts](https://docs.cosmwasm.com/docs/0.14/architecture/smart-contracts/)
 * [Top 10 DeFi Security Best Practices](https://blog.chain.link/defi-security-best-practices/)
 * [Cw-Contracts](https://github.com/deus-labs/cw-contracts) 
+ *[Cw20 Allowance](https://github.com/CosmWasm/cw-plus/blob/main/packages/cw20/README.md#allowances)
 

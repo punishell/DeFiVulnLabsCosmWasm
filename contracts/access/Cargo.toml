@@ -5,7 +5,7 @@ authors = ["Michal Bazyli <punishell@users.noreply.github.com>"]
 edition = "2018"
 license = "Apache-2.0"
 description = "Simple CosmWasm contract for an access control testing"
-repository = "https://github.com/InterWasm/cw-contracts"
+repository = "https://github.com/punishell/DeFiVulnLabsCosmWasm"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

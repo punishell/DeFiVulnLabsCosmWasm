@@ -1,0 +1,8 @@
+/home/michal/DeFiVulnLabsCosmWasm/contracts/receive/target/debug/deps/zeroize-2689efc09f54036d.rmeta: /home/michal/.cargo/registry/src/github.com-1ecc6299db9ec823/zeroize-1.5.7/src/lib.rs /home/michal/.cargo/registry/src/github.com-1ecc6299db9ec823/zeroize-1.5.7/src/x86.rs
+
+/home/michal/DeFiVulnLabsCosmWasm/contracts/receive/target/debug/deps/libzeroize-2689efc09f54036d.rlib: /home/michal/.cargo/registry/src/github.com-1ecc6299db9ec823/zeroize-1.5.7/src/lib.rs /home/michal/.cargo/registry/src/github.com-1ecc6299db9ec823/zeroize-1.5.7/src/x86.rs
+
+/home/michal/DeFiVulnLabsCosmWasm/contracts/receive/target/debug/deps/zeroize-2689efc09f54036d.d: /home/michal/.cargo/registry/src/github.com-1ecc6299db9ec823/zeroize-1.5.7/src/lib.rs /home/michal/.cargo/registry/src/github.com-1ecc6299db9ec823/zeroize-1.5.7/src/x86.rs
+
+/home/michal/.cargo/registry/src/github.com-1ecc6299db9ec823/zeroize-1.5.7/src/lib.rs:
+/home/michal/.cargo/registry/src/github.com-1ecc6299db9ec823/zeroize-1.5.7/src/x86.rs:

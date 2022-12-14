@@ -1,0 +1,19 @@
+cargo:rerun-if-changed=build.rs
+Writing generated file: /home/michal/DeFiVulnLabsCosmWasm/contracts/receive/target/debug/build/cranelift-codegen-a0a6383f3cfc43fe/out/settings.rs
+Writing generated file: /home/michal/DeFiVulnLabsCosmWasm/contracts/receive/target/debug/build/cranelift-codegen-a0a6383f3cfc43fe/out/types.rs
+Writing generated file: /home/michal/DeFiVulnLabsCosmWasm/contracts/receive/target/debug/build/cranelift-codegen-a0a6383f3cfc43fe/out/opcodes.rs
+Writing generated file: /home/michal/DeFiVulnLabsCosmWasm/contracts/receive/target/debug/build/cranelift-codegen-a0a6383f3cfc43fe/out/inst_builder.rs
+Writing generated file: /home/michal/DeFiVulnLabsCosmWasm/contracts/receive/target/debug/build/cranelift-codegen-a0a6383f3cfc43fe/out/settings-x86.rs
+Writing generated file: /home/michal/DeFiVulnLabsCosmWasm/contracts/receive/target/debug/build/cranelift-codegen-a0a6383f3cfc43fe/out/settings-arm64.rs
+cargo:rerun-if-changed=src/clif.isle
+cargo:rerun-if-changed=src/prelude.isle
+cargo:rerun-if-changed=src/isa/x64/inst.isle
+cargo:rerun-if-changed=src/isa/x64/lower.isle
+cargo:rerun-if-changed=src/clif.isle
+cargo:rerun-if-changed=src/prelude.isle
+cargo:rerun-if-changed=src/isa/aarch64/inst.isle
+cargo:rerun-if-changed=src/isa/aarch64/lower.isle
+cargo:rerun-if-changed=src/clif.isle
+cargo:rerun-if-changed=src/prelude.isle
+cargo:rerun-if-changed=src/isa/s390x/inst.isle
+cargo:rerun-if-changed=src/isa/s390x/lower.isle
