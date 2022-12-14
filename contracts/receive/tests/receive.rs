@@ -10,8 +10,6 @@ use cw20::Cw20ReceiveMsg;
         let code = ContractWrapper::new(execute, instantiate, query);
         let code_id = app.store_code(Box::new(code));
         // The contract has no real life functionality
-        // It can change the config of the contract
-        // It can send current balance to chosen receiver.
         let contract_addr = app
             .instantiate_contract(
                 code_id,
