@@ -57,7 +57,7 @@ switch to nightly and run with cranelift.
 
 ## List of vulnerabilities
 * [Insufficient Access Control](contracts/access/tests/access_control.rs) 
-* [Insufficient Token Address Validati](contracts/receive/tests/access_control.rs) 
+* [Insufficient Token Address Validation](contracts/receive/tests/receive.rs) 
 * TBA
 
 
