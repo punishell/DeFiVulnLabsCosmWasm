@@ -1,4 +1,7 @@
 # DeFiVulnLabs
+
+![Logo](https://raw.githubusercontent.com/punishell/DeFiVulnLabsCosmWasm/master/DeFiVylnLabsLogo.png)
+
 This is  an Web3 cosmwasm security training which is contribution to [DeFiVulnLabs](https://github.com/SunWeb3Sec/DeFiVulnLabs). I want to share these materials with everyone interested in Web3 security and how to find vulnerabilities in code and exploit them. 
 
   
