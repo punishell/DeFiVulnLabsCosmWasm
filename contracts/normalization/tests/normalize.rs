@@ -22,7 +22,7 @@ fn query_balance_native(app: &App, address: &Addr, denom: &str) -> Coin {
 }
 
 #[test]
-    fn insufficient_token_address_validation_test() {
+    fn lack_of_address_normalization_test() {
         let mut app = App::default();
         let code = ContractWrapper::new(execute, instantiate, query);
         let code_id = app.store_code(Box::new(code));
