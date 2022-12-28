@@ -24,7 +24,7 @@ pub fn instantiate(
     store_config(deps.storage, &Config {
         owner:  deps.api.addr_validate(&msg.owner)?,
         token: deps.api.addr_validate(&msg.token)?,
-    });
+    })?;
     Ok(Response::default())
 }
 
@@ -49,7 +49,7 @@ fn execute_withdraw(
     destination: String,
   ) -> Result<Response, ContractError> {
     let config: Config = read_config(deps.storage)?;
-    let mut staker_info: StakerInfo = read_staker_info(deps.storage, &info.sender)?;
+    let staker_info: StakerInfo = read_staker_info(deps.storage, &info.sender)?;
     //SOME COMPUTATION SHOULD BE HERE BUT THIS  LATER   
     let amount = staker_info.staked_amount;
     Ok(Response::new()
@@ -76,10 +76,15 @@ fn execute_withdraw(
     token: String,
   ) -> Result<Response, ContractError> {
 
+    let config = read_config(deps.storage)?;
+    if info.sender != config.owner {
+        return Err(ContractError::Unauthorized{});
+    }
+
     store_config(deps.storage, &Config {
         owner: deps.api.addr_validate(&owner)?,
         token: deps.api.addr_validate(&token)?,
-    });
+    })?;
 
     let resp= Response::new()
     .add_attribute("action", "UpdateConfig")
