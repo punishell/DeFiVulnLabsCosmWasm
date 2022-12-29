@@ -64,6 +64,7 @@ switch to nightly and run with cranelift.
 * [Lack of address normalization](contracts/normalization/tests/normalize.rs) 
 * Rounding Issues 
 * Loss of Precision
+* Denial of Service
 
 
 ## Link reference
