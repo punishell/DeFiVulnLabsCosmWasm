@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/home/michal/DeFiVulnLabsCosmWasm/contracts/default_values/target/debug/build/typenum-36c01e29180f3846/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/home/michal/DeFiVulnLabsCosmWasm/contracts/default_values/target/debug/build/typenum-36c01e29180f3846/out/op.rs
