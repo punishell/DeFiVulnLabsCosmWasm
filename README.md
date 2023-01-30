@@ -62,7 +62,7 @@ switch to nightly and run with cranelift.
 * [Insufficient Access Control](contracts/access/tests/access_control.rs) 
 * [Insufficient Token Address Validation](contracts/receive/tests/receive.rs) 
 * [Lack of address normalization](contracts/normalization/tests/normalize.rs) 
-* Default Values (this week)
+* [Default Values](contracts/default_values/tests/default_values.rs) 
 * Rounding Issues 
 * Loss of Precision
 * Denial of Service
