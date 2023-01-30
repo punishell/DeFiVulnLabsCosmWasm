@@ -32,7 +32,7 @@ fn mint_native(app: &mut App, beneficiary: String, denom: String, amount: u128) 
             .unwrap();
 
             let msg = QueryMsg::Owner {  };
-            // the contract was deployed with default values 
+            // the contract was deployed with default values so owner = ""; 
             let owner_response : OwnerResponse = app.wrap().query_wasm_smart(contract_addr.clone(), &msg).unwrap();
             println!("{:?}", owner_response);
             mint_native(&mut app, contract_addr.to_string(), "ATOM".to_string(), 100);
