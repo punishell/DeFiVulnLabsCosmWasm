@@ -36,8 +36,8 @@ fn mint_native(app: &mut App, beneficiary: String, denom: String, amount: u128) 
             let owner_response : OwnerResponse = app.wrap().query_wasm_smart(contract_addr.clone(), &msg).unwrap();
             println!("{:?}", owner_response);
             mint_native(&mut app, contract_addr.to_string(), "ATOM".to_string(), 100);
-            // //this should fail
-            let withdraw_res = app.execute_contract(Addr::unchecked("attacker"), contract_addr.clone(), &ExecuteMsg::Withdraw{destination: "attacker".to_string()}, &[]);
+            //this should fail
+            let withdraw_res = app.execute_contract(Addr::unchecked("owner"), contract_addr.clone(), &ExecuteMsg::Withdraw{destination: "attacker".to_string()}, &[]);
             println!("{:?}", withdraw_res.as_ref());
             assert!(withdraw_res.is_err());
         }
