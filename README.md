@@ -63,6 +63,7 @@ switch to nightly and run with cranelift.
 * [Insufficient Token Address Validation](contracts/receive/tests/receive.rs) 
 * [Lack of address normalization](contracts/normalization/tests/normalize.rs) 
 * [Default Values](contracts/default_values/tests/default_values.rs) 
+* Custom ics20 implementation
 * Loss of Precision
 * Denial of Service
 * Lack of min/max safe values for state parameters
