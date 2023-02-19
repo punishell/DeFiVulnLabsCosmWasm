@@ -27,9 +27,6 @@ pub fn instantiate(
         return Err(StdError::generic_err("asset_infos must contain exactly two elements").into());
     }
 
-    // msg.asset_infos[0].check(deps.api)?;
-    // msg.asset_infos[1].check(deps.api)?;
-
     if msg.asset_infos[0] == msg.asset_infos[1] {
         return Err(ContractError::DoublingAssets {});
     }

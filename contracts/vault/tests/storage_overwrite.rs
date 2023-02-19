@@ -25,7 +25,7 @@ fn query_balance_native(app: &App, address: &Addr, denom: &str) -> Coin {
 }
 
 #[test]
-    fn bad_usage_of_save_test() {
+    fn storage_overwrite_test() {
         let mut app = App::default();
         let code = ContractWrapper::new(execute, instantiate, query);
         let code_id = app.store_code(Box::new(code));
@@ -40,20 +40,20 @@ fn query_balance_native(app: &App, address: &Addr, denom: &str) -> Coin {
             )
             .unwrap();
         let encoded = cosmwasm_std::to_binary(&Cw20HookMsg::Deposit {});
-        let stake_fake_token = app.execute_contract(Addr::unchecked("token_1"), contract_addr.clone(), &ExecuteMsg::Receive(Cw20ReceiveMsg {
+        let mock_send_tokens = app.execute_contract(Addr::unchecked("token_1"), contract_addr.clone(), &ExecuteMsg::Receive(Cw20ReceiveMsg {
             sender: "attacker".to_string(),
             amount: Uint128::new(2137),
             msg: encoded.unwrap(),
         }), &[]);
-        println!("{:?}", stake_fake_token);
+        println!("{:?}", mock_send_tokens);
 
         let encoded = cosmwasm_std::to_binary(&Cw20HookMsg::Deposit {});
-        let stake_fake_token = app.execute_contract(Addr::unchecked("token_1"), contract_addr.clone(), &ExecuteMsg::Receive(Cw20ReceiveMsg {
+        let mock_send_tokens = app.execute_contract(Addr::unchecked("token_1"), contract_addr.clone(), &ExecuteMsg::Receive(Cw20ReceiveMsg {
             sender: "attacker".to_string(),
             amount: Uint128::new(7),
             msg: encoded.unwrap(),
         }), &[]);
-        println!("{:?}", stake_fake_token);
+        println!("{:?}", mock_send_tokens);
 
 
         let query_user_info: UserResponse = app.wrap().query_wasm_smart(contract_addr, &QueryMsg::UserInfo{ user: "attacker".to_string() }).unwrap();
