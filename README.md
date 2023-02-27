@@ -64,6 +64,7 @@ switch to nightly and run with cranelift.
 * [Lack of address normalization](contracts/normalization/tests/normalize.rs) 
 * [Default Values](contracts/default_values/tests/default_values.rs) 
 * [Storage Overwrite](contracts/vault/tests/storage_overwrite.rs) 
+* [Unhandled Function](contracts/unhandled/tests/unhandled_function.rs)
 * Custom ics20 implementation
 * Loss of Precision
 * Denial of Service
