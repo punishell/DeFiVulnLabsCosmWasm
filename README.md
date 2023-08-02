@@ -65,6 +65,9 @@ switch to nightly and run with cranelift.
 * [Default Values](contracts/default_values/tests/default_values.rs) 
 * [Storage Overwrite](contracts/vault/tests/storage_overwrite.rs) 
 * [Unhandled Function](contracts/unhandled/tests/unhandled_function.rs)
+* Unsaved config values
+* Empty Migration logic
+* Non-Withdrawable Asset 
 
 
 ## Link reference
