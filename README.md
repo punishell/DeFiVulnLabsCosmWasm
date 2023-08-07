@@ -67,7 +67,8 @@ switch to nightly and run with cranelift.
 * [Unhandled Function](contracts/unhandled/tests/unhandled_function.rs)
 * Unsaved config values
 * Empty Migration logic
-* Non-Withdrawable Asset 
+* Non-Withdrawable Asset
+* Storage Bloating
 
 
 ## Link reference
