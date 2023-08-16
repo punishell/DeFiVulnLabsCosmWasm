@@ -65,7 +65,8 @@ switch to nightly and run with cranelift.
 * [Default Values](contracts/default_values/tests/default_values.rs) 
 * [Storage Overwrite](contracts/vault/tests/storage_overwrite.rs) 
 * [Unhandled Function](contracts/unhandled/tests/unhandled_function.rs)
-* Unsaved config values
+* [Uninitialized Data](contracts/uninitialized_data/tests/uninitailized_data.rs)
+* Unwrap_or_default
 * Empty Migration logic
 * Non-Withdrawable Asset
 * Storage Bloating
