@@ -62,11 +62,10 @@ switch to nightly and run with cranelift.
 * [Insufficient Access Control](contracts/access/tests/access_control.rs) 
 * [Insufficient Token Address Validation](contracts/receive/tests/receive.rs) 
 * [Lack of address normalization](contracts/normalization/tests/normalize.rs) 
-* [Default Values](contracts/default_values/tests/default_values.rs) 
 * [Storage Overwrite](contracts/vault/tests/storage_overwrite.rs) 
 * [Unhandled Function](contracts/unhandled/tests/unhandled_function.rs)
 * [Uninitialized Data](contracts/uninitialized_data/tests/uninitailized_data.rs)
-* Unwrap_or_default
+* [Unwrap_or_default](contracts/unwrap_or/tests/unwrap_or.rs)
 * Empty Migration logic
 * Non-Withdrawable Asset
 * Storage Bloating
