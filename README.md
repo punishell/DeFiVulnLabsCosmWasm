@@ -66,8 +66,8 @@ switch to nightly and run with cranelift.
 * [Unhandled Function](contracts/unhandled/tests/unhandled_function.rs)
 * [Uninitialized Data](contracts/uninitialized_data/tests/uninitailized_data.rs)
 * [Unwrap_or_default](contracts/unwrap_or/tests/unwrap_or.rs)
+* [Non-Withdrawable Asset](contracts/surplus_assets/tests/surplus_assets.rs)
 * Empty Migration logic
-* Non-Withdrawable Asset
 * Storage Bloating
 
 
@@ -77,4 +77,4 @@ switch to nightly and run with cranelift.
 * [Top 10 DeFi Security Best Practices](https://blog.chain.link/defi-security-best-practices/)
 * [Cw-Contracts](https://github.com/deus-labs/cw-contracts) 
 * [Cw20 Allowance](https://github.com/CosmWasm/cw-plus/blob/main/packages/cw20/README.md#allowances)
-
+* [Archway-Testing](https://docs.archway.io/developers/cosmwasm-documentation/smart-contracts/testing)
